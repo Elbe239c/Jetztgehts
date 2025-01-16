@@ -1,0 +1,456 @@
+/* Grundlegende Layout- und Farbdefinitionen */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0d1220; /* Dunkles Blau */
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #1f2638;
+  padding: 10px 0; /* Kleineres Padding für eine kompakte Navbar */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar .logo h2 {
+  color: #fff;
+  font-size: 1.4em;
+  margin-left: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #64b5f6;
+}
+
+/* CTA Button in der Navbar */
+.cta-btn {
+  background-color: #64b5f6;
+  color: #fff;
+  padding: 8px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #3579d5;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #1f2638;
+  padding: 80px 0;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.hero-title {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.hero-subtitle {
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+/* Kurs-Highlights */
+.course-highlights {
+  padding: 60px 0;
+  background-color: #34495e;
+}
+
+.course-highlights .section-title {
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.highlight {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #2c3e50;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.highlight h3 {
+  color: #64b5f6;
+  font-size: 1.8em;
+}
+
+.highlight p {
+  color: #ccc;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+/* Animation für die Hero Section */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  background-color: #0b1024;
+  padding: 20px 0;
+  text-align: center;
+  color: #ccc;
+  font-size: 0.9em;
+}
+/* Grundlegende Layout- und Farbdefinitionen */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0d1220; /* Dunkles Blau */
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #1f2638;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar .logo h2 {
+  color: #fff;
+  font-size: 1.4em;
+  margin-left: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #64b5f6;
+}
+
+/* Anmeldeformular */
+.signup-form {
+  padding: 60px 0;
+  background-color: #34495e;
+}
+
+.signup-form .form-title {
+  font-size: 2.5em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signup-form .form-subtitle {
+  font-size: 1.2em;
+  color: #ccc;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.signup-form form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #2c3e50;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.signup-form .form-group {
+  margin-bottom: 20px;
+}
+
+.signup-form .form-group label {
+  display: block;
+  font-size: 1.1em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.signup-form .form-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #34495e;
+  color: #fff;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form .form-group input:focus {
+  background-color: #1f2638;
+  outline: none;
+}
+
+.cta-btn {
+  background-color: #64b5f6;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #3579d5;
+}
+
+/* Footer */
+footer {
+  background-color: #0b1024;
+  padding: 20px 0;
+  text-align: center;
+  color: #ccc;
+  font-size: 0.9em;
+}
+/* Allgemeine Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #34495e;
+  margin: 0;
+  padding: 0;
+}
+
+/* Einfache Animationen */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Header und Navigationsleiste */
+.navbar {
+  background-color: #333333;
+  color: white;
+  padding: 15px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo h2 {
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.cta-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Anmeldeformular */
+.signup-form {
+  padding: 50px 0;
+}
+
+.form-container {
+  background-color: #2c3e50;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.form-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-btn:hover {
+  background-color: #0056b3;
+}
+
+.forgot-password {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.register-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #ffffff;
+  padding: 15px 0;
+  text-align: center;
+}
+/* Logo-Position oben links */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 80px; /* Größe des Logos */
+  height: 80px;
+  background-image: url("YOUR_LOGO_URL_HERE"); /* URL des Logos einfügen */
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+/* Dekoratives Logo unten rechts */
+.logo-decoration {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 150px;
+  height: 150px;
+  background-image: url("image.png"); /* URL des Logos einfügen */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.1; /* Dezente Transparenz */
+  z-index: 1;
+}
